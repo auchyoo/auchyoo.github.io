@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Forum&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #24242C;
+    --second-bg-color: #212121;
+    --text-color: #ffffff;
+    --accent-color: #032757;
+    --grey-shadow: #2E3434;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url('C:/Users/krism/OneDrive/Desktop/portfolio/images/windows-11-blue-3840x2160-17272.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    padding-bottom: 70px;
+}
+
+.header{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.003rem 12% 0.003rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    height: 70px;
+    font-family: 'Segoe UI Variable', sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    padding-left: 0;
+}
+
+/***********************************************************/
+
+/*
+
+I WILL USE THIS WHEN MAKING IT RESPONSIVE LATER ON 
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+*/
+
+/***********************************************************/
+/*<div class="left-container">*/
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.left-container{
+    display: flex;
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 160px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    left: 0;
+}
+
+/*<div class="home-img"> -- aka my picture*/
+
+.home-img{
+    border-radius: 50%;
+    margin-right: -80px;
+}
+
+.home-img img{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 17px;
+    bottom: 10px;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/*<div class="search">*/
+
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    background-color: #bbbbbb;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search i{
+    font-size: 20px;
+    color: #666;
+    margin-right: 10px;
+}
+
+/*<div class="my-name">Kris*/
+
+.my-name{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 650;
+}
+
+.my-name span{
+    color: var(--accent-color);
+}
+
+/*<div class="social-icons">*/
+
+.social-icons{
+    margin-right: 20px;
+}
+
+.social-icons a{
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid transparent;
+    font-size: 2.5rem;
+    border-radius: 20%;
+    color: var(--accent-color);
+    margin: 3rem 0.2rem 3rem 0;
+}
+
+.social-icons a:hover{
+    color: var(--text-color);
+    background-color: #dfdfdf38;
+}
+
+.social-icons a img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+/***********************************************************/
+/*<div class="right-container">*/
+
+.right-container{
+    position: fixed;
+    top: 0;
+    right: 17px;
+    padding: 15px;
+    text-align: right;
+}
+
+/*<div class="copyright">*/
+
+.copyright{
+    position: relative;
+    right: 70px;
+    top: 8px;
+}
+
+/*<div class="date-time">*/
+
+.date-time{
+    font-size: 15px;
+    color: #ffffff;
+    position: relative;
+    bottom: 8px;
+}
+
+.date-time span{
+    color: var(--text-color);
+}
+
+/***********************************************************/
+/*<div class="folders">*/
+
+.folders{
+    display: inline-block;
+    width: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 0;
+    font-family: 'Segoe UI Variable', sans-serif;
+}
+
+/*download cv text*/
+
+.folders a{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 11px;
+}
+
+/*download cv icon*/
+
+.folders a img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*other folder icons*/
+
+.folders img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*icon background*/
+
+.folder{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 13px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+}
+
+.folder:hover{
+    background-color: #dfdfdf38;
+}
+
+/***********************************************************/
+
+/*<div class="modal-box" id="modal-box">*/
+
+.modal-box{
+    display: none; 
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/*<div class="modal-content">*/
+
+.modal-content{
+    background-color: #000000;
+    margin: 8% auto; /* 8% from the top and centered */
+    border-radius: 5px;
+    width: 80%;
+    font-family: Courier, monospace;
+    font-size: 13px;
+}
+  
+/*close button */
+
+.close{
+    display: inline-flex;
+    color: #aaa;
+    width: 100%;
+    padding: 0 10px 0;
+    justify-content: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #2E3434;
+}
+  
+.close:hover,
+.close:focus{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/***********************************************************/
+
+@media (max-width: 1200px) {
+    .left-container {
+        margin-left: 100px;
+    }
+    .home-img img {
+        width: 40px;
+        height: 40px;
+    }
+    .search {
+        width: 250px;
+    }
+    .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .folders img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left-container {
+        margin-left: 50px;
+    }
+    .home-img img {
+        width: 30px;
+        height: 30px;
+    }
+    .search {
+        width: 200px;
+    }
+    .social-icons a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .folders img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-container {
+        margin-left: 20px;
+    }
+    .home-img img {
+        width: 20px;
+        height: 20px;
+    }
+    .search {
+        width: 150px;
+    }
+    .social-icons a {
+        width: 2rem;
+        height: 2rem;
+    }
+    .folders img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-container {
+        margin-left: 10px;
+    }
+    .home-img img {
+        display: none;
+        width: 15px;
+        height: 15px;
+    }
+    .search {
+        width: 100px;
+    }
+    .social-icons a {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .folders img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-container {
+        margin-left: 5px;
+    }
+    .home-img img {
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+    .search {
+        width: 80px;
+    }
+    .social-icons a {
+        width: 1rem;
+        height: 1rem;
+    }
+    .folders img {
+        width: 10px;
+        height: 10px;
+    }
+}
