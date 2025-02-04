@@ -24,7 +24,7 @@ html{
 }
 
 body{
-    background-image: url('https://github.com/auchyoo/auchyoo.github.io/blob/d8775e1c1f4ccc2a2a0f1fa44e0fc5d63cdde5e2/images/windows-11-blue-3840x2160-17272.jpg');
+    background-image: url('https://raw.githubusercontent.com/auchyoo/auchyoo.github.io/refs/heads/main/icons/windows-11-blue-3840x2160-17272.ico');
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--text-color);
